@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Survey_Form.CSS">
+</head>
+<body>
+    <h1 id="title">Physical Fitness Survey Form</h1>
+    <p id="description">Thank you for taking the time to answer the survey</p>
+
+    <form id="survey-form" method="post">
+
+        <fieldset>        
+
+        <!-- Name Segment -->
+            <label id="name-label" for="name">Enter your Name: <input type="text" id="name" name="first-name" placeholder="Marc Oducayen" required></label>
+
+        <!-- Email Segment -->
+            <label id="email-label" for="email">Enter your Email: <input type="email"id="email" name="email"placeholder="test123@gmail.com" required></label>
+
+        <!-- Number Segment -->
+
+            <label id="number-label" for="age">
+                Enter your Age (Years): <input type="number" name="age" id="number" min="12"max="110" placeholder="21"required>
+            </label>
+        </fieldset>
+
+        <!-- Dropdown Segment -->
+        <fieldset>
+            <label for="referer">What is your current profession? <select name="referer" id="dropdown">
+                <option value="">(Select one)</option>
+                <option value="1">None</option>
+                <option value="2">Student</option>
+                <option value="3">Employed</option>
+                <option value="4">Unemployed</option>
+                <option value="5">Retired</option>
+            </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <!-- Radio Button Segment -->
+            <legend>
+                Physical Activity Levels
+            </legend>
+            <label for="always-active">
+                <input type="radio" name="activity-type" id="always-active" value="always-active" class="inline">Always Active
+            </label>
+            <label for="sometimes-active">
+                <input type="radio" name="activity-type" id="sometimes-active" value="sometimes-active" class="inline">Sometimes Active</label>
+            <label for="never-active">
+                <input type="radio" name="activity-type" id="never-active" value="never-active" class="inline">Never Active
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <!-- Checkbox Segment -->
+            <label for="workout-duration"> How long do you workout for? </label>
+                <label><input type="checkbox" id="workout-duration" value="workout-duration" class="inline">3 hours or longer</label>
+                <label></label><input type="checkbox" id="workout-duration" value="workout-duration" class="inline">2 hours or longer</label>
+                <label></label><input type="checkbox"id="workout-duration" value="workout-duration" class="inline">1 hour or longer</label>
+                <label></label><input type="checkbox" id="workout-duration" value="workout-duration" class="inline">Less than an hour</label>
+                <label></label><input type="checkbox" id="workout-duration" value="workout-duration" class="inline">None</label>
+
+                <hr>
+
+                <!-- Textarea Segment -->
+                <label for="experience">Provide your physical activity experience: <textarea name="experience" id="experience" rows="3" cols="30" placeholder="I enjoy running everyday..."></textarea> </label>
+        </fieldset>
+
+        <!-- Submit Button Segment -->
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
