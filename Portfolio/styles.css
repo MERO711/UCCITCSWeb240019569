@@ -1,19 +1,112 @@
-html {
-    box-sizing: border-box;
-}
-
 @media (max-width: 75em) {
     html {
         font-size: 60%;
     }
 }
 
-.nav {
+#navbar {
     display: flex;
-    justify-content: flex-end;
-    position: fixed;
     top: 0;
+    position: fixed;
+    justify-content: flex-end;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 1000;
+    padding: 15px;
+    background-color: rgba(46, 46, 46, 0.8);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 5rem;
+    font-size: large;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: burlywood;
+}
+
+section {
+    height: 107vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome-section {
+    position: center;
+    background-color: rgb(211, 229, 243);
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 4rem;
+    margin-top: 5px;
+}
+
+#welcome-section h2 {
+    font-size: 2rem;
+}
+
+#welcome-section p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#projects {
+    background-color: #dfdff7;
+}
+
+#projects h2 {
+    font-size: 2.7rem;
+    margin-top: 3.5rem;
+}
+
+#projects p {
+    font-size: 1.3rem;
+}
+
+#projects a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+#projects a:hover {
+    color: darkkhaki;
+}
+
+.project-tile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.project-image {
+    height: calc(100% - 3.5rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-name {
+    font-size: 1.5rem;
+}
+
+#contact {
+    background-color: #F5F5F5;
 }
