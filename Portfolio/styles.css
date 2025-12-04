@@ -30,6 +30,7 @@ nav li {
 nav a {
     color: white;
     text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav a:hover {
@@ -53,15 +54,19 @@ section {
 #welcome-section h1 {
     font-size: 4rem;
     margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #welcome-section h2 {
     font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #welcome-section p {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
 
 #projects {
@@ -71,6 +76,7 @@ section {
 #projects h2 {
     font-size: 2.7rem;
     margin-top: 3.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #projects p {
@@ -103,10 +109,55 @@ section {
     object-fit: cover;
 }
 
-.project-name {
+.project-name1 {
     font-size: 1.5rem;
+    padding-left: 7.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-name2 {
+    font-size: 1.5rem;
+    padding-left: 7.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-name3 {
+    font-size: 1.5rem;
+    padding-left: 6.35rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-name4 {
+    font-size: 1.5rem;
+    padding-left: 5.45rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #contact {
     background-color: #F5F5F5;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 3.5rem;
+    margin: 1.25rem 0;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#contact p {
+    font-size: 1.5rem;
 }
